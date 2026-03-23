@@ -23,6 +23,9 @@ section {padding:60px 20px; max-width:1000px; margin:auto;}
 .card h3 {margin-bottom:10px;}
 .about {display:flex; flex-wrap:wrap; gap:30px; align-items:center;}
 .about div {flex:1;}
+.about img {width:100%; border-radius:15px;}
+.reviews {display:grid; grid-template-columns:repeat(auto-fit, minmax(220px,1fr)); gap:20px;}
+.review {background:white; padding:20px; border-radius:15px; box-shadow:0 5px 20px rgba(0,0,0,0.05);} 
 .contact {background:#0a7cff; color:white; border-radius:20px; text-align:center;}
 .contact p {margin:10px 0;}
 footer {background:#111; color:white; text-align:center; padding:20px; margin-top:40px;}
@@ -38,14 +41,15 @@ footer {background:#111; color:white; text-align:center; padding:20px; margin-to
 <nav>
 <a href="#">Home</a>
 <a href="#services">Services</a>
-<a href="#about">About</a>
+<a href="#about">Doctor</a>
+<a href="#reviews">Reviews</a>
 <a href="#contact">Contact</a>
 </nav>
 
 <section class="hero">
 <h2>Healthy Smile Starts Here</h2>
 <p>Modern dental treatments with experienced professionals</p>
-<button class="btn" onclick="window.open('https://wa.me/918291945264','_blank')">Book Appointment</button>
+<button class="btn" onclick="window.open('https://wa.me/919876543210','_blank')">Book Appointment</button>
 </section>
 
 <section id="services">
@@ -72,11 +76,31 @@ footer {background:#111; color:white; text-align:center; padding:20px; margin-to
 
 <section id="about" class="about">
 <div>
-<h2>About Our Clinic</h2>
-<p>We provide high-quality dental care using modern technology and a patient-first approach. Our goal is to ensure comfort, trust, and long-term oral health.</p>
+<h2>Meet Your Dentist</h2>
+<p><b>Dr. [Name]</b></p>
+<p>BDS | 8+ Years Experience</p>
+<p>Specialist in Root Canal, Cosmetic Dentistry & Smile Design. Known for gentle and patient-friendly treatments.</p>
 </div>
 <div>
-<img src="https://images.unsplash.com/photo-1588776814546-ec7e4f1e0c2f" width="100%" style="border-radius:15px;">
+<img src="https://images.unsplash.com/photo-1588776814546-ec7e4f1e0c2f">
+</div>
+</section>
+
+<section id="reviews">
+<h2 style="text-align:center; margin-bottom:30px;">Patient Reviews</h2>
+<div class="reviews">
+<div class="review">
+<p>"Very smooth and painless experience. Doctor explained everything clearly."</p>
+<p><b>- Rohan S.</b></p>
+</div>
+<div class="review">
+<p>"Clinic is very clean and modern. Highly recommended in Kharghar."</p>
+<p><b>- Priya M.</b></p>
+</div>
+<div class="review">
+<p>"Best dental experience I’ve had. Very professional."</p>
+<p><b>- Amit K.</b></p>
+</div>
 </div>
 </section>
 
@@ -84,7 +108,7 @@ footer {background:#111; color:white; text-align:center; padding:20px; margin-to
 <h2>Contact Us</h2>
 <p>📍 Kharghar, Navi Mumbai</p>
 <p>📞 +91 9876543210</p>
-<button class="btn" onclick="window.open('https://www.google.com/maps/place/Sai+Solitaire/@19.051082,73.0760174,17z/data=!3m1!4b1!4m6!3m5!1s0x3be7c3170d0ffa1b:0x86d11bab1d15a8b9!8m2!3d19.0510769!4d73.0785923!16s%2Fg%2F11h045zzmt?entry=ttu&g_ep=EgoyMDI2MDMxOC4xIKXMDSoASAFQAw%3D%3D','_blank')">Get Directions</button>
+<button class="btn" onclick="window.open('https://maps.google.com','_blank')">Get Directions</button>
 </section>
 
 <footer>
